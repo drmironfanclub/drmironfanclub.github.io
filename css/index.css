@@ -61,15 +61,45 @@ body {
     background: rgba(0,0,0,0.5);
   }
 }
-.title {
+.main {
   color: white;
-  font-size: 7.5em;
   text-align: center;
+  margin: 0 5%;
+
+}
+.main .title {
+  font-size: 6em;
   opacity: 0;
   animation-name: fade-in;
   animation-duration: 0.75s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
   animation-delay: 0.25s;
-  margin: 0 10%;
+  font-family: 'Proza Libre', sans-serif;
+}
+.main .join {
+  display: inline-block;
+  font-size: 4em;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 0.5s;
+  animation-timing-function: ease-in-out;;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  background: rgb(27, 71, 142);
+  /*margin-top: 2rem;*/
+  font-family: 'Noto Sans', sans-serif;
+  padding: 2rem;
+  border-radius: 40px;
+  transition: box-shadow 0.25s, margin-top 0.25s, padding 0.25s, background 0.25s;
+  box-shadow: black 0 0 10px 0px;
+}
+
+.main .join:hover {
+  cursor: pointer;
+  box-shadow: none;
+  /*margin-top: 1.5rem;*/
+  padding: 3rem;
+  background: rgb(26, 103, 142);
+
 }
