@@ -1,0 +1,18 @@
+body {
+  margin: 0;
+}
+
+.background-img {
+  height: 100%;
+}
+.background {
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+@media (min-aspect-ratio: 4/3) {
+  .background-img {
+    height: auto;
+    width: 100%;
+  }
+}
