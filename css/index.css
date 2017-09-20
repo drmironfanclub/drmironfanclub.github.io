@@ -4,15 +4,72 @@ body {
 
 .background-img {
   height: 100%;
+  animation-name: sepiafy;
+  animation-duration: 0.75s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
 }
 .background {
   height: 100%;
   width: 100%;
   overflow: hidden;
+  position: fixed;
+  z-index: -1;
+}
+@media (max-aspect-ratio: 2/3) {
+  .background-img {
+    margin-left: -20em;
+  }
 }
 @media (min-aspect-ratio: 4/3) {
   .background-img {
     height: auto;
     width: 100%;
   }
+}
+.overlay {
+  height: 100%;
+  width: 100%;
+  /*background: rgba(0, 0, 0, 0.5);*/
+  background: rgba(0,0,0,0);
+  animation-name: fade-in-overlay;
+  animation-duration: 0.75s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+@keyframes sepiafy {
+  to {
+    filter: sepia(50%);
+  }
+}
+@keyframes fade-in {
+  from {
+    opacity: 0;
+  } to {
+    opacity: 1;
+  }
+}
+@keyframes fade-in-overlay {
+  from {
+    background: rgba(0,0,0,0);
+  } to {
+    background: rgba(0,0,0,0.5);
+  }
+}
+.title {
+  color: white;
+  font-size: 7.5em;
+  text-align: center;
+  opacity: 0;
+  animation-name: fade-in;
+  animation-duration: 0.75s;
+  animation-timing-function: ease-in-out;
+  animation-fill-mode: forwards;
+  animation-delay: 0.25s;
+  margin: 0 10%;
 }
