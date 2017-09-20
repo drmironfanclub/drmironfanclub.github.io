@@ -5,10 +5,10 @@ body {
 .background-img {
   height: 100%;
   animation-name: sepiafy;
-  animation-duration: 0.75s;
+  animation-duration: 1s;
   animation-timing-function: ease-in-out;
   animation-fill-mode: forwards;
-  animation-delay: 0.5s;
+  animation-delay: 0.25s;
 }
 .background {
   height: 100%;
