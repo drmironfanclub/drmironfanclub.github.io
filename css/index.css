@@ -48,9 +48,14 @@ body {
   }
 }
 @keyframes fade-in {
-  from {
+  0% {
+    transform: translateY(-1em);
     opacity: 0;
-  } to {
+  }
+  90% {
+    transform: translateY(0);
+  }
+  100% {
     opacity: 1;
   }
 }
@@ -78,6 +83,8 @@ body {
   font-family: 'Proza Libre', sans-serif;
 }
 .main .join {
+  color: white;
+  text-decoration: none;
   display: inline-block;
   font-size: 4em;
   opacity: 0;
