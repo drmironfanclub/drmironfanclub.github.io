@@ -94,7 +94,7 @@ body {
   animation-fill-mode: forwards;
   animation-delay: 0.5s;
   background: rgb(27, 71, 142);
-  /*margin-top: 2rem;*/
+  margin-top: 3rem;
   font-family: 'Noto Sans', sans-serif;
   padding: 2rem;
   border-radius: 40px;
@@ -104,7 +104,8 @@ body {
 
 .main .join:hover {
   cursor: pointer;
-  box-shadow: none;
+  box-shadow: black 0 5px 5px 0px;
+  /*box-shadow: none;*/
   /*margin-top: 1.5rem;*/
   padding: 3rem;
   background: rgb(26, 103, 142);
