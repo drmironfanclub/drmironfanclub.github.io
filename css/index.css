@@ -94,20 +94,20 @@ body {
   animation-fill-mode: forwards;
   animation-delay: 0.5s;
   background: rgb(27, 71, 142);
-  margin-top: 3rem;
+  margin-top: 1rem;
   font-family: 'Noto Sans', sans-serif;
-  padding: 2rem;
-  border-radius: 40px;
+  padding: 1rem 2rem;
+  /*border-radius: 40px;*/
   transition: box-shadow 0.25s, margin-top 0.25s, padding 0.25s, background 0.25s;
-  box-shadow: black 0 0 10px 0px;
+  box-shadow: black 0 0 5px 0px;
 }
 
 .main .join:hover {
   cursor: pointer;
-  box-shadow: black 0 2px 5px 0px;
+  box-shadow: black 0 0px 2.5px 0px;
   /*box-shadow: none;*/
   /*margin-top: 1.5rem;*/
-  padding: 2.25rem;
+  padding: 1.5rem 3rem;
   background: rgb(26, 103, 142);
 
 }
