@@ -104,10 +104,10 @@ body {
 
 .main .join:hover {
   cursor: pointer;
-  box-shadow: black 0 5px 5px 0px;
+  box-shadow: black 0 2px 5px 0px;
   /*box-shadow: none;*/
   /*margin-top: 1.5rem;*/
-  padding: 3rem;
+  padding: 2.25rem;
   background: rgb(26, 103, 142);
 
 }
